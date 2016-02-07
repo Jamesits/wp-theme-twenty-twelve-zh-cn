@@ -30,3 +30,5 @@
     wp_enqueue_script('han-js', get_stylesheet_directory_uri().'/bower_components/Han/dist/han.min.js', array( 'enable-han-js' ), false, true);
  }
  add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
+
+ add_action('wp_enqueue_scripts', create_function(null, "wp_dequeue_script('devicepx');"), 20);
