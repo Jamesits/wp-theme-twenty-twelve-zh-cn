@@ -32,3 +32,6 @@ h3.jp-relatedposts-headline em {
     border-bottom-width: initial;
     padding-bottom: initial;
 }
+blockquote {
+    font-style: normal !important;
+}
