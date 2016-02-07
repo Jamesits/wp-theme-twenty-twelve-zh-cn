@@ -18,7 +18,7 @@ aside ul {
 h1#enty-title {
     margin: auto;
 }
-h3#jp-relatedposts-headline em {
+h3.jp-relatedposts-headline em {
     font-weight: 700;
     -moz-text-emphasis: unset;
     -webkit-text-emphasis: unset;
