@@ -32,15 +32,3 @@
 
      wp_enqueue_script('han-js', get_stylesheet_directory_uri().'/bower_components/Han/dist/han.min.js', array(), false, true);
  }
-
- if (!function_exists('language_attributes')) {
-     /**
-      * Use correct `lang` tag.
-      *
-      * @since Twenty Twelve zh-CN 1.0
-      */
-     function language_attributes()
-     {
-         return 'lang="zh-cmn-Hans"';
-     }
- }
