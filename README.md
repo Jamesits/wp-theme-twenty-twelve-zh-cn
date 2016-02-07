@@ -1,0 +1,1 @@
+# wp-theme-twenty-twelve-zh-cn
