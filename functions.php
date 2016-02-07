@@ -18,8 +18,8 @@
  * For more information on hooks, actions, and filters, @link https://codex.wordpress.org/Plugin_API
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Twenty_Twelve_zh-CN
+ * @since Twenty Twelve zh-CN 1.0
  */
 
  add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
