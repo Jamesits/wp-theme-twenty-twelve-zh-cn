@@ -19,7 +19,6 @@
  *
  * @since Twenty Twelve zh-CN 1.0
  */
- add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
  function theme_enqueue_styles()
  {
     wp_enqueue_style('parent-style', get_template_directory_uri().'/style.css');
@@ -27,6 +26,7 @@
         get_stylesheet_directory_uri().'/bower_components/Han/dist/han.min.css',
         array('parent-style')
     );
-    wp_enqueue_script('twentytwelve-zhcn-js', get_stylesheet_directory_uri().'/script.js');
+    wp_enqueue_script('enable-han-js', get_stylesheet_directory_uri().'/js/enable-han.js');
     wp_enqueue_script('han-js', get_stylesheet_directory_uri().'/bower_components/Han/dist/han.min.js', array( 'twentytwelve-zhcn-js' ), false, true);
  }
+ add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
