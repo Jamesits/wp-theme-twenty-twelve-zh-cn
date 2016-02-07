@@ -20,15 +20,15 @@ h1#enty-title {
 }
 h3.jp-relatedposts-headline em {
     font-weight: 700;
-    -moz-text-emphasis: unset;
-    -webkit-text-emphasis: unset;
-    text-emphasis: unset;
-    -moz-text-emphasis-position: unset;
-    -webkit-text-emphasis-position: unset;
-    text-emphasis-position: unset;
-    font-style: unset;
-    border-bottom: unset;
-    padding-bottom: unset;
-    border-bottom-width: unset;
-    padding-bottom: unset;
+    -moz-text-emphasis: initial;
+    -webkit-text-emphasis: initial;
+    text-emphasis: initial;
+    -moz-text-emphasis-position: initial;
+    -webkit-text-emphasis-position: initial;
+    text-emphasis-position: initial;
+    font-style: initial;
+    border-bottom: initial;
+    padding-bottom: initial;
+    border-bottom-width: initial;
+    padding-bottom: initial;
 }
