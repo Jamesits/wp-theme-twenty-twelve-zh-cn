@@ -27,6 +27,6 @@
         get_stylesheet_directory_uri().'/bower_components/Han/dist/han.min.css',
         array('parent-style')
     );
-    wp_enqueue_script('twentytwelve-zhcn-js', get_stylesheet_directory_uri().'/script.js', array(), false, true);
+    wp_enqueue_script('twentytwelve-zhcn-js', get_stylesheet_directory_uri().'/script.js');
     wp_enqueue_script('han-js', get_stylesheet_directory_uri().'/bower_components/Han/dist/han.min.js', array( 'twentytwelve-zhcn-js' ), false, true);
  }
