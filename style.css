@@ -5,7 +5,7 @@
  Author:       James Swineson
  Author URI:   https://swineson.me
  Template:     twentytwelve
- Version:      1.1.6
+ Version:      1.1.7
  License:      ISC License (ISC)
  License URI:  https://opensource.org/licenses/ISC
  Tags:         light, gray, white, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
@@ -15,7 +15,7 @@
 aside ul {
     padding-left: 0;
 }
-h1#enty-title {
+h1.entry-title {
     margin: auto;
 }
 h3.jp-relatedposts-headline em {
