@@ -28,6 +28,7 @@
     );
     wp_enqueue_script('enable-han-js', get_stylesheet_directory_uri().'/js/enable-han.js');
     wp_enqueue_script('han-js', get_stylesheet_directory_uri().'/bower_components/Han/dist/han.min.js', array( 'enable-han-js' ), false, true);
+    wp_enqueue_script('post-han-js', get_stylesheet_directory_uri().'/js/post-han.js', array( 'han-js' ), false, true);
  }
  add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
