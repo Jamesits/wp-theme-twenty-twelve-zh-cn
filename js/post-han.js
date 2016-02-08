@@ -1,2 +1,1 @@
-var hinst = Han.init;
-hinst.substInaccurateChar();
+Han.init.substInaccurateChar();
