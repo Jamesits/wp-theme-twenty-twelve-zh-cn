@@ -1,1 +1,1 @@
-Han.init.substInaccurateChar();
+Han.init().substInaccurateChar();
