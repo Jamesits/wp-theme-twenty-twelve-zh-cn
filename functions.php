@@ -26,10 +26,8 @@
         get_stylesheet_directory_uri().'/assets/han.min.css',
         array('parent-style')
     );
-    wp_enqueue_script('enable-han-js', get_stylesheet_directory_uri().'/assets/enable-han.js');
-    wp_enqueue_script('han-js', get_stylesheet_directory_uri().'/assets/han.min.js', array( 'enable-han-js' ), false, true);
+    wp_enqueue_script('pre-han-js', get_stylesheet_directory_uri().'/assets/pre-han.js');
+    wp_enqueue_script('han-js', get_stylesheet_directory_uri().'/assets/han.min.js', array( 'pre-han-js' ), false, true);
     wp_enqueue_script('post-han-js', get_stylesheet_directory_uri().'/assets/post-han.js', array( 'han-js' ), false, true);
  }
  add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
-
- add_action('wp_enqueue_scripts', create_function(null, "wp_dequeue_script('devicepx');"), 20);
