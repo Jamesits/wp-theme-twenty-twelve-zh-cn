@@ -19,15 +19,17 @@
  *
  * @since Twenty Twelve zh-CN 1.0
  */
- function theme_enqueue_styles()
- {
-    wp_enqueue_style('parent-style', get_template_directory_uri().'/style.css');
-    wp_enqueue_style('han',
-        get_stylesheet_directory_uri().'/assets/han.min.css',
-        array('parent-style')
-    );
-    wp_enqueue_script('pre-han-js', get_stylesheet_directory_uri().'/assets/pre-han.js');
-    wp_enqueue_script('han-js', get_stylesheet_directory_uri().'/assets/han.min.js', array( 'pre-han-js' ), false, true);
-    wp_enqueue_script('post-han-js', get_stylesheet_directory_uri().'/assets/post-han.js', array( 'han-js' ), false, true);
- }
- add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
+function theme_enqueue_styles()
+{
+   wp_enqueue_style('parent-style', get_template_directory_uri().'/style.css');
+   wp_enqueue_style('han',
+       get_stylesheet_directory_uri().'/assets/han.min.css',
+       array('parent-style')
+   );
+   wp_enqueue_script('pre-han-js', get_stylesheet_directory_uri().'/assets/pre-han.js');
+   wp_enqueue_script('han-js', get_stylesheet_directory_uri().'/assets/han.min.js', array( 'pre-han-js' ), false, true);
+   wp_enqueue_script('post-han-js', get_stylesheet_directory_uri().'/assets/post-han.js', array( 'han-js' ), false, true);
+}
+add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
+
+add_filter( 'allow_subdirectory_install', $true);
